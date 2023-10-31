@@ -1,15 +1,20 @@
 #include <stdio.h>
 
-int main() {
-    int n, i;
+int main()
+{
+    int longueur, largeur;
+    printf("Entrez la longueur du rectangle: ");
+    scanf("%d", &longueur);
+    printf("Entrez la largeur du rectangle: ");
+    scanf("%d", &largeur);
 
-    printf("Entrez un nombre entier : ");
-    scanf("%d", &n);
-
-    printf("Table de multiplication de %d :\n", n);
-
-    for (i = 1; i <= 10; i++) {
-        printf("%d x %d = %d\n", n, i, n*i);
+    for (int i = 0; i < largeur; i++)
+    {
+        for (int j = 0; j < longueur; j++)
+        {
+            printf("*");
+        }
+        printf("\n");
     }
 
     return 0;
