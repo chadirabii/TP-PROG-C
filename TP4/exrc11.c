@@ -1,11 +1,10 @@
-
 #include <stdio.h>
 #include <stdbool.h>
 
 int main()
 {
     int n, i;
-    bool premier = true;
+    bool est_premier = true;
 
     printf("Entrez un entier positif: ");
     scanf("%d", &n);
@@ -20,12 +19,12 @@ int main()
     {
         if (n % i == 0)
         {
-            premier = true;
+            est_premier = false;
             break;
         }
     }
 
-    if (premier == true)
+    if (est_premier == true)
         printf("%d est un nombre premier.\n", n);
     else
         printf("%d n'est pas un nombre premier.\n", n);
