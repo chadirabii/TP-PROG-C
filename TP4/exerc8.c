@@ -4,12 +4,9 @@ int main()
     for (int i = 1; i <= 100; i++)
     {
         int n = i;
-        int somme = 0;
-        while (n > 0)
-        {
-            somme += n % 10;
-            n = n / 10;
-        }
+        int mod = n % 10;
+        int div = n / 10;
+        int somme = div + mod;
         if (somme == 11)
         {
             printf("%d\n", i);
